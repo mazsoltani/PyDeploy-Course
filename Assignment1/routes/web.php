@@ -19,6 +19,7 @@ Route::get('/', function () {
     return view('home');
 });
 
+
 Route::get('/api', [ApiController::class, 'index'])->name('Api.index');
 Route::post('/fruit', [ApiController::class, 'fruit'])->name('fruit');
 Route::post('/number', [ApiController::class, 'number'])->name('number');
